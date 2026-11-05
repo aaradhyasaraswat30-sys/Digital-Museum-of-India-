@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Incredible India | Home</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #190b10;
+  color: #f5ead7;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+
+header {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: #200d14;
+  border-bottom: 1px solid #a98245;
+}
+
+.logo {
+  font-family: 'Cinzel', serif;
+  color: #dfbd78;
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5ead7;
+  margin-left: 18px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #dfbd78;
+}
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 8%;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(ellipse at center, #65313a 0%, #37141f 48%, #16080d 100%);
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(223,189,120,.22);
+  border-radius: 50%;
+  animation: rotate 24s linear infinite;
+}
+
+.hero::before {
+  width: 440px;
+  height: 440px;
+}
+
+.hero::after {
+  width: 540px;
+  height: 540px;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  to { transform: rotate(360deg); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  animation: fadeUp 1.5s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tagline {
+  color: #dfbd78;
+  letter-spacing: 6px;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(42px, 8vw, 85px);
+  color: #e5c487;
+  line-height: 1.2;
+  text-shadow: 0 5px 25px #000;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 2;
+  font-size: 15px;
+  color: #f1e4d0;
+}
+
+.gold-line {
+  width: 90px;
+  height: 2px;
+  background: #dfbd78;
+  margin: 25px auto;
+}
+
+.discover {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 14px 30px;
+  border: 1px solid #dfbd78;
+  color: #dfbd78;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 12px;
+  transition: .4s;
+}
+
+.discover:hover {
+  background: #dfbd78;
+  color: #190b10;
+}
+
+/* INTRODUCTION */
+
+.intro {
+  padding: 85px 9%;
+  text-align: center;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #dfbd78;
+  margin-bottom: 25px;
+}
+
+.intro p {
+  line-height: 2.1;
+  color: #d9c8b2;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+/* QUOTE */
+
+.quote {
+  padding: 65px 10%;
+  text-align: center;
+  background: linear-gradient(120deg,#421722,#251018);
+  border-top: 1px solid #876333;
+  border-bottom: 1px solid #876333;
+}
+
+.quote p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px,4vw,32px);
+  font-style: italic;
+  color: #e5c487;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #ad987c;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+@media(max-width:600px) {
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    margin: 5px 7px;
+    display: inline-block;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">INCREDIBLE INDIA</div>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="taj-mahal.html">01</a>
+    <a href="red-fort.html">02</a>
+    <a href="qutub-minar.html">03</a>
+    <a href="hawa-mahal.html">04</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="tagline">
+      A JOURNEY THROUGH TIME
+    </div>
+
+    <h1>THE HERITAGE<br>OF INDIA</h1>
+
+    <div class="gold-line"></div>
+
+    <p>
+      Welcome to a world where history meets beauty,
+      where every stone tells a story and every
+      structure reflects the brilliance of generations
+      past. Discover the timeless architectural and
+      cultural heritage of India.
+    </p>
+
+    <a href="taj-mahal.html" class="discover">
+      BEGIN THE JOURNEY
+    </a>
+
+  </div>
+</section>
+
+<section class="intro">
+
+  <h2>A Legacy Carved in Time</h2>
+
+  <div class="gold-line"></div>
+
+  <p>
+    India is a land blessed with a rich and diverse
+    heritage. Its monuments are remarkable
+    expressions of art, culture, architecture and
+    history. They reflect the creativity, knowledge
+    and craftsmanship of people from different
+    periods.
+  </p>
+
+  <p>
+    From magnificent stone structures to beautifully
+    decorated palaces, these architectural treasures
+    represent the traditions and achievements of
+    generations. Each structure holds a special place
+    in the story of our nation.
+  </p>
+
+  <p>
+    These historical treasures are not merely
+    buildings; they are valuable connections to our
+    past. They remind us of our identity, inspire us
+    to appreciate our culture and encourage us to
+    preserve our heritage for future generations.
+  </p>
+
+</section>
+
+<section class="quote">
+
+  <p>
+    "Our heritage is not just what we inherit,
+    but what we choose to preserve."
+  </p>
+
+  <div class="gold-line"></div>
+
+  <span class="tagline">
+    CELEBRATING INDIA'S TIMELESS HERITAGE
+  </span>
+
+</section>
+
+<footer>
+  INCREDIBLE INDIA &nbsp; | &nbsp;
+  A DIGITAL MUSEUM OF INDIAN HERITAGE
+  <br><br>
+  © 2026
+</footer>
+
+</body>
+</html>
