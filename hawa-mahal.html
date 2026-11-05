@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hawa Mahal | Digital Museum of India</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7eedc;
+  color: #3b2020;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background: #4b171d;
+  padding: 18px 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 15px #0003;
+}
+
+nav a {
+  color: #f4d58d;
+  text-decoration: none;
+  margin: 8px 12px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hero {
+  min-height: 75vh;
+  background:
+    linear-gradient(#210b0bc0, #210b0b70),
+    url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Hawa%20Mahal.%20Jaipur.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(42px, 8vw, 76px);
+  color: #f4d58d;
+  text-shadow: 2px 3px 10px black;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-top: 15px;
+  letter-spacing: 3px;
+}
+
+section {
+  max-width: 1050px;
+  margin: auto;
+  padding: 65px 25px;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  color: #7b252c;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.gold-line {
+  width: 75px;
+  height: 3px;
+  background: #bd9144;
+  margin: 15px 0 25px;
+}
+
+.feature-image {
+  width: 100%;
+  max-height: 470px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 25px 0;
+  box-shadow: 0 8px 25px #0002;
+}
+
+.fact-box {
+  background: #fff9ed;
+  border-left: 5px solid #bd9144;
+  padding: 22px;
+  margin: 18px 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #0001;
+}
+
+.fact-box strong {
+  color: #7b252c;
+}
+
+footer {
+  background: #4b171d;
+  color: #f4d58d;
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 13px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  nav a {
+    margin: 6px;
+    font-size: 11px;
+  }
+
+  section {
+    padding: 45px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="taj-mahal.html">TAJ MAHAL</a>
+  <a href="red-fort.html">RED FORT</a>
+  <a href="qutub-minar.html">QUTUB MINAR</a>
+  <a href="hawa-mahal.html">HAWA MAHAL</a>
+</nav>
+
+<header class="hero">
+  <h1>HAWA MAHAL</h1>
+  <p>THE PALACE OF WINDS</p>
+</header>
+
+<section>
+  <h2>A Palace Like No Other</h2>
+  <div class="gold-line"></div>
+
+  <p>
+    Hawa Mahal is one of the most famous historical buildings in Jaipur,
+    Rajasthan. Its name means "Palace of Winds". Built in 1799, this
+    beautiful palace is known for its pink sandstone walls and hundreds
+    of small windows. Its unique design makes it a remarkable example
+    of Indian architecture.
+  </p>
+
+  <img class="feature-image"
+  src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hawa%20Mahal%20in%20Jaipur%2C%20India.jpg"
+  alt="Hawa Mahal in Jaipur">
+
+  <p>
+    The palace was commissioned by Maharaja Sawai Pratap Singh and
+    designed by architect Lal Chand Ustad. It was built as an extension
+    of the royal city palace.
+  </p>
+  <p>
+    <small>Photo: Prajeshdutta / Wikimedia Commons, CC BY-SA 4.0.</small>
+  </p>
+</section>
+
+<section>
+  <h2>History</h2>
+  <div class="gold-line"></div>
+
+  <p>
+    Hawa Mahal was constructed in 1799 during the reign of Maharaja
+    Sawai Pratap Singh. The design was inspired by the crown of Lord
+    Krishna. It allowed royal women to observe everyday street life
+    and festivals from behind the windows while maintaining privacy.
+  </p>
+
+  <div class="fact-box">
+    <strong>Did you know?</strong>
+    <p>
+      Hawa Mahal was built without a traditional foundation in the
+      usual sense. Its curved shape and design help support the structure.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Architectural Beauty</h2>
+  <div class="gold-line"></div>
+
+  <img class="feature-image"
+  src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hawa%20Mahal.%20Jaipur.jpg"
+  alt="Pink sandstone architecture of Hawa Mahal">
+
+  <p>
+    Hawa Mahal is a five-storey building made mainly of red and pink
+    sandstone. Its front has 953 small windows, known as jharokhas.
+    These windows allow cool air to flow through the palace.
+  </p>
+
+  <p>
+    The building has delicate latticework, decorated balconies,
+    domes and beautifully designed arches. Its special structure
+    gives it a unique appearance.
+  </p>
+
+  <p>
+    <small>Photo: Ajit Kumar Majhi / Wikimedia Commons, CC BY-SA 4.0.</small>
+  </p>
+</section>
+
+<section>
+  <h2>Interesting Facts</h2>
+  <div class="gold-line"></div>
+
+  <div class="fact-box">
+    <strong>1. The Palace of Winds</strong>
+    <p>Its name comes from the cool breeze that passes through its many windows.</p>
+  </div>
+
+  <div class="fact-box">
+    <strong>2. 953 Windows</strong>
+    <p>The palace is famous for its 953 small windows, called jharokhas.</p>
+  </div>
+
+  <div class="fact-box">
+    <strong>3. Five Storeys</strong>
+    <p>Hawa Mahal has five beautifully designed floors.</p>
+  </div>
+
+  <div class="fact-box">
+    <strong>4. Built in 1799</strong>
+    <p>It was built during the rule of Maharaja Sawai Pratap Singh.</p>
+  </div>
+</section>
+
+<section>
+  <h2>A Lasting Legacy</h2>
+  <div class="gold-line"></div>
+
+  <p>
+    Hawa Mahal continues to attract visitors from across the world.
+    It represents the creativity, skill and artistic excellence of
+    the builders of the past. Even today, it remains one of the
+    most recognisable symbols of Jaipur and India's rich heritage.
+  </p>
+</section>
+
+<footer>
+  <p> DIGITAL MUSEUM OF INDIA </p>
+  <p>Celebrating India's history, culture and architecture.</p>
+  <p>© 2026 | A Journey Through India's Heritage</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll("h1, h2, p, section, img, .fact-box").forEach(el => {
+  el.classList.add("reveal");
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
