@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taj Mahal | Digital Museum of India</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f0df;
+  color: #38251f;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: #4b101b;
+  color: #e9c77b;
+  padding: 20px;
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+nav a {
+  color: #f8e8c3;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #e9c77b;
+}
+
+.hero {
+  min-height: 75vh;
+  background:
+  linear-gradient(#260d0d77, #260d0d99),
+  url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1600');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(35px, 7vw, 65px);
+  color: #f2d48d;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 55px 25px;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  color: #701f2b;
+  margin-bottom: 18px;
+  font-size: 27px;
+}
+
+p {
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 8px 25px #0002;
+}
+
+.fact-box {
+  background: #fff9eb;
+  border-left: 5px solid #b68a3c;
+  padding: 22px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+footer {
+  background: #4b101b;
+  color: #f8e8c3;
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>DIGITAL MUSEUM OF INDIA</h2>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="taj-mahal.html">TAJ MAHAL</a>
+    <a href="red-fort.html">RED FORT</a>
+    <a href="qutub-minar.html">QUTUB MINAR</a>
+    <a href="hawa-mahal.html">HAWA MAHAL</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>The Taj Mahal</h1>
+    <p>A timeless symbol of love, beauty and extraordinary architecture.</p>
+  </div>
+</div>
+
+<section>
+  <h2>Introduction</h2>
+  <p>
+    The Taj Mahal is one of India's most famous historical monuments.
+    Located in Agra, Uttar Pradesh, it is admired around the world for
+    its beautiful white marble structure, artistic details and peaceful
+    surroundings. It is also recognised as a UNESCO World Heritage Site.
+  </p>
+  <img class="image"
+  src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200"
+  alt="The beautiful Taj Mahal">
+</section>
+
+<section>
+  <h2>History</h2>
+  <p>
+    The Taj Mahal was commissioned by the Mughal emperor Shah Jahan
+    in memory of his wife Mumtaz Mahal. Its construction began in 1632
+    and the main mausoleum was completed around 1648. Other parts of
+    the complex were completed later.
+  </p>
+  <p>
+    Skilled craftsmen and workers from different regions contributed
+    to building this magnificent monument.
+  </p>
+</section>
+
+<section>
+  <h2>Architecture</h2>
+  <p>
+    The Taj Mahal is a masterpiece of Mughal architecture. It is made
+    mainly of white marble and features a large central dome, four
+    minarets, beautiful arches and detailed floral decorations.
+  </p>
+  <p>
+    Its walls are decorated with delicate patterns and precious stones.
+    The monument looks different under changing sunlight, making it
+    especially beautiful throughout the day.
+  </p>
+  <img class="image"
+  src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1200"
+  alt="Taj Mahal architecture">
+</section>
+
+<section>
+  <h2>Interesting Facts</h2>
+
+  <div class="fact-box">
+    <p>✦ The Taj Mahal is located on the banks of the Yamuna River.</p>
+    <p>✦ It was built by Mughal emperor Shah Jahan.</p>
+    <p>✦ It became a UNESCO World Heritage Site in 1983.</p>
+    <p>✦ Its white marble changes appearance with different lighting.</p>
+    <p>✦ It is considered one of the finest examples of Mughal architecture.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Legacy</h2>
+  <p>
+    Today, the Taj Mahal is a treasured part of India's cultural
+    heritage. It attracts visitors from across the world and reminds
+    us of the country's rich history, artistic skills and architectural
+    achievements.
+  </p>
+</section>
+
+<footer>
+  <p>Digital Museum of India | Celebrating India's Heritage</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll("h1, h2, p, section, img, .fact-box").forEach(el => {
+  el.classList.add("reveal");
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
