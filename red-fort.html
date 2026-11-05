@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Fort | Digital Museum of India</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f0df;
+  color: #38251f;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: #4b101b;
+  color: #e9c77b;
+  padding: 20px;
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+nav a {
+  color: #f8e8c3;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #e9c77b;
+}
+
+.hero {
+  min-height: 75vh;
+  background:
+  linear-gradient(#260d0d77, #260d0d99),
+  url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1600');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(35px, 7vw, 65px);
+  color: #f2d48d;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 55px 25px;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  color: #701f2b;
+  margin-bottom: 18px;
+  font-size: 27px;
+}
+
+p {
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 8px 25px #0002;
+}
+
+.fact-box {
+  background: #fff9eb;
+  border-left: 5px solid #b68a3c;
+  padding: 22px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+footer {
+  background: #4b101b;
+  color: #f8e8c3;
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>DIGITAL MUSEUM OF INDIA</h2>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="taj-mahal.html">TAJ MAHAL</a>
+    <a href="red-fort.html">RED FORT</a>
+    <a href="qutub-minar.html">QUTUB MINAR</a>
+    <a href="hawa-mahal.html">HAWA MAHAL</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>The Red Fort</h1>
+    <p>A magnificent symbol of India's history, courage and freedom.</p>
+  </div>
+</div>
+
+<section>
+  <h2>Introduction</h2>
+  <p>
+    The Red Fort, also known as Lal Qila, is a famous historical
+    monument located in Delhi, India. It is known for its massive
+    red sandstone walls, beautiful buildings and impressive Mughal
+    architecture. It is an important symbol of India's rich heritage.
+  </p>
+  <img class="image"
+  src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200"
+  alt="Red Fort in Delhi">
+</section>
+
+<section>
+  <h2>History</h2>
+  <p>
+    The Red Fort was built by the Mughal emperor Shah Jahan.
+    Construction began in 1638 when he decided to shift his capital
+    from Agra to Delhi. The fort was completed in 1648.
+  </p>
+  <p>
+    It served as the main residence of Mughal emperors for many years.
+    After British rule, it became an important symbol of India's
+    independence. On 15 August every year, the Prime Minister of India
+    hoists the national flag here.
+  </p>
+</section>
+
+<section>
+  <h2>Architecture</h2>
+  <p>
+    The Red Fort is famous for its strong red sandstone walls and
+    beautiful Mughal-style buildings. It includes grand gates,
+    gardens, halls and decorative structures.
+  </p>
+  <p>
+    Some important structures inside the fort include the Diwan-i-Aam,
+    where the emperor addressed the public, and the Diwan-i-Khas,
+    where private meetings were held.
+  </p>
+  <img class="image"
+  src="https://images.unsplash.com/photo-1598434192043-71111c1b3f0a?w=1200"
+  alt="Historic architecture of Delhi">
+</section>
+
+<section>
+  <h2>Interesting Facts</h2>
+
+  <div class="fact-box">
+    <p>✦ The Red Fort was built by Shah Jahan.</p>
+    <p>✦ It was completed in 1648.</p>
+    <p>✦ It is made mainly of red sandstone.</p>
+    <p>✦ It became a UNESCO World Heritage Site in 2007.</p>
+    <p>✦ The Prime Minister hoists India's national flag here every Independence Day.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Legacy</h2>
+  <p>
+    The Red Fort reminds us of India's glorious past and its journey
+    towards independence. Today, it is one of the country's most
+    treasured monuments and attracts visitors from across the world.
+  </p>
+</section>
+
+<footer>
+  <p>Digital Museum of India | Celebrating India's Heritage</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll("h1, h2, p, section, img, .fact-box").forEach(el => {
+  el.classList.add("reveal");
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
