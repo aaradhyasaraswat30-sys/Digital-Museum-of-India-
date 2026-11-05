@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qutub Minar | Digital Museum of India</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f0df;
+  color: #38251f;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: #4b101b;
+  color: #e9c77b;
+  padding: 20px;
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+nav a {
+  color: #f8e8c3;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #e9c77b;
+}
+
+.hero {
+  min-height: 75vh;
+  background:
+    linear-gradient(#260d0d77, #260d0d99),
+    url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Qutub%20Minar%20%28Full%20View%29.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(35px, 7vw, 65px);
+  color: #f2d48d;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 55px 25px;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  color: #701f2b;
+  margin-bottom: 18px;
+  font-size: 27px;
+}
+
+p {
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 8px 25px #0002;
+}
+
+.fact-box {
+  background: #fff9eb;
+  border-left: 5px solid #b68a3c;
+  padding: 22px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.credit {
+  font-size: 11px;
+  color: #725d4c;
+  margin-top: -12px;
+}
+
+footer {
+  background: #4b101b;
+  color: #f8e8c3;
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>DIGITAL MUSEUM OF INDIA</h2>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="taj-mahal.html">TAJ MAHAL</a>
+    <a href="red-fort.html">RED FORT</a>
+    <a href="qutub-minar.html">QUTUB MINAR</a>
+    <a href="hawa-mahal.html">HAWA MAHAL</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Qutub Minar</h1>
+    <p>A magnificent tower that tells the story of India's medieval history.</p>
+  </div>
+</div>
+
+<section>
+  <h2>Introduction</h2>
+  <p>
+    Qutub Minar is a famous historical monument located in Delhi,
+    India. It is one of the tallest brick minarets in the world
+    and is admired for its height, detailed carvings and beautiful
+    Indo-Islamic architecture. It is surrounded by several other
+    important historical structures.
+  </p>
+
+  <img class="image"
+  src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Qutub%20Minar%20%28Full%20View%29.jpg"
+  alt="Full view of Qutub Minar">
+
+  <p class="credit">
+    Photograph: Sarah Batra / Wikimedia Commons
+  </p>
+</section>
+
+<section>
+  <h2>History</h2>
+  <p>
+    The construction of Qutub Minar was started by Qutb-ud-din Aibak
+    in 1199. It was later continued and completed by his successor,
+    Iltutmish. Over the years, some parts of the tower were damaged
+    and repaired by different rulers.
+  </p>
+
+  <p>
+    The monument represents an important period in India's history
+    and the beginning of the Delhi Sultanate.
+  </p>
+</section>
+
+<section>
+  <h2>Architecture</h2>
+  <p>
+    Qutub Minar is approximately 72.5 metres tall and has five
+    storeys. It is mainly built using red sandstone and marble.
+    Each storey has a balcony, and the tower is decorated with
+    beautiful carvings and inscriptions.
+  </p>
+
+  <p>
+    The tower becomes narrower as it rises. Its detailed patterns,
+    calligraphy and unique design make it a remarkable example
+    of Indo-Islamic architecture.
+  </p>
+
+  <img class="image"
+  src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Qutub%20Minar%20close%20up%20view.jpg"
+  alt="Close-up view of Qutub Minar">
+
+  <p class="credit">
+    Photograph: Jaanshi / Wikimedia Commons
+  </p>
+</section>
+
+<section>
+  <h2>Interesting Facts</h2>
+
+  <div class="fact-box">
+    <p>✦ Qutub Minar is approximately 72.5 metres tall.</p>
+    <p>✦ Its construction began in 1199.</p>
+    <p>✦ It has five storeys.</p>
+    <p>✦ It is located in Delhi.</p>
+    <p>✦ The Qutub Minar complex became a UNESCO World Heritage Site in 1993.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Legacy</h2>
+  <p>
+    Qutub Minar is an important part of India's cultural heritage.
+    It attracts visitors from around the world and helps us understand
+    the artistic skills, architecture and history of medieval India.
+  </p>
+</section>
+
+<footer>
+  <p>Digital Museum of India | Celebrating India's Heritage</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll("h1, h2, p, section, img, .fact-box").forEach(el => {
+  el.classList.add("reveal");
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
